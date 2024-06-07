@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.chatbot {
+  height: 100vh;
+  background: #f4f4f4;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+/* ******** Chat window and Message bubbles ******* */
+
+.chatbot > .chat-window {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 12px;
+  padding-bottom: 40px;
+}
+
+.chatbot > .chat-window > .message {
+  margin-top: 40px;
+  max-width: 90%;
+  border-radius: 26px;
+  padding: 16px 14px;
+  position: relative;
+}
+
+.chatbot > .chat-window > .message:first-of-type {
+  margin-top: 10px;
+}
+
+.chatbot > .chat-window > .message > .date-time {
+  font-size: 12px;
+  position: absolute;
+  bottom: -18px;
+  color: #545454;
+}
+
+.chatbot > .chat-window > .bot {
+  margin-right: auto;
+  border-bottom-left-radius: 0px;
+  background: #2196f3;
+  color: #fff;
+}
+
+.chatbot > .chat-window > .user {
+  margin-left: auto;
+  border-bottom-right-radius: 0px;
+  background: white;
+  color: #545454;
+  border: 1px solid gainsboro;
+}
+
+.chatbot > .chat-window > .bot > .date-time {
+  left: 15px;
+}
+
+.chatbot > .chat-window > .user > .date-time {
+  right: 15px;
+}
+
+/*********** Footer ***********/
+
+.chatbot > .footer {
+  background-color: #fff;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatbot > .footer > input {
+  flex-grow: 1;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding: 20px 12px;
+  background: transparent;
+}
+
+.chatbot > .footer > button {
+  flex-shrink: 0;
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+  background: #2196f3;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-right: 6px;
+}

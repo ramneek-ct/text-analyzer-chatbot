@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.chatbot {
+  height: 100vh;
+  background: #f4f4f4;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+/* **************** Header ************** */
+
+.chatbot > .header {
+  height: 70px;
+  background-color: #2196f3;
+  flex-shrink: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 26px;
+}
+
